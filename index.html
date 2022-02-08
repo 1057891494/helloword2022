@@ -8,18 +8,18 @@
 </head>
 <body>
   <h2 id="counter">0</h2>
-  <button id="add">点击+2</button>
-  <button id="sub">点击-2</button>
+  <button id="add">点击+1</button>
+  <button id="sub">点击-1</button>
   <script>
     document.querySelector('#add').addEventListener('click', function () {
       const counter = document.querySelector('#counter')
       const count = Number(counter.innerHTML)
-      counter.innerHTML = (count + 2)
+      counter.innerHTML = (count + 1)
     })
     document.querySelector('#sub').addEventListener('click', function () {
       const counter = document.querySelector('#counter')
       const count = Number(counter.innerHTML)
-      counter.innerHTML = (count - 2)
+      counter.innerHTML = (count - 1)
     })
   </script>
 </body>
